@@ -1,0 +1,37 @@
+---
+title: Valid - Configuration Guide
+---
+
+{/* Build timestamp: 1765397990554 - Forces cache invalidation */}
+
+**Last Updated:** 12/10/2025
+
+---
+
+# Configuration Guide
+
+Learn how to configure the application.
+
+## Environment Variables
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| PORT | Server port | 3000 |
+| DEBUG | Enable debug mode | false |
+| API_KEY | Your API key | - |
+
+## Config File
+
+Create a `config.json` file:
+
+```json
+{
+  "port": 8080,
+  "debug": true,
+  "features": {
+    "analytics": true
+  }
+}
+```
+
+> **Note:** Configuration changes require a restart.

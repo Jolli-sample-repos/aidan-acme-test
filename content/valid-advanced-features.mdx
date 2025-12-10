@@ -1,0 +1,49 @@
+---
+title: Valid - Advanced Features
+---
+
+{/* Build timestamp: 1765397990554 - Forces cache invalidation */}
+
+**Last Updated:** 12/10/2025
+
+---
+
+# Advanced Features
+
+Explore advanced capabilities.
+
+## Webhooks
+
+Configure webhooks to receive real-time updates:
+
+```yaml
+webhooks:
+  - url: https://example.com/webhook
+    events:
+      - user.created
+      - order.completed
+```
+
+## Rate Limiting
+
+| Tier | Requests/hour |
+|------|---------------|
+| Free | 1,000 |
+| Pro | 10,000 |
+| Enterprise | Unlimited |
+
+## Caching
+
+Enable caching for better performance:
+
+```typescript
+interface CacheConfig {
+  ttl: number;
+  maxSize: number;
+}
+
+const cache: CacheConfig = {
+  ttl: 3600,
+  maxSize: 1000
+};
+```

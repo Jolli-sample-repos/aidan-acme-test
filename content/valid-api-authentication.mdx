@@ -1,0 +1,41 @@
+---
+title: Valid - API Authentication
+---
+
+{/* Build timestamp: 1765397990554 - Forces cache invalidation */}
+
+**Last Updated:** 12/10/2025
+
+---
+
+# API Authentication
+
+Secure your API requests with authentication.
+
+## OAuth 2.0
+
+We support OAuth 2.0 for secure authentication.
+
+### Supported Providers
+
+1. Google
+2. GitHub
+3. Microsoft
+
+## API Keys
+
+For server-to-server communication:
+
+```javascript
+const client = new Client({
+  apiKey: process.env.API_KEY
+});
+```
+
+## Bearer Tokens
+
+Include in headers:
+
+```
+Authorization: Bearer <your-token>
+```
